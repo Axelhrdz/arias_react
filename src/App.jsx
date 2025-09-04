@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
-import './normalize.css'
+// import './normalize.css'
 import './App.css'
 import Hero from './pages/Hero'
 import Home from './pages/Home';

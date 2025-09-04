@@ -8,8 +8,8 @@
 *::after {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  background-color: #222;
-  color: #fff;
+  /* background-color: #222;
+  color: #fff; */
 }
 
 /* Remove default margins and padding */
