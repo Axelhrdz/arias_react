@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard'
 
 const Products = () => {
   return (
-    <div className='p-3'>
+    <div>
       <Navbar></Navbar>
       <h1>Products page</h1>
 
