@@ -1,4 +1,4 @@
-# Logs
+# ───── Logs ─────
 logs
 *.log
 npm-debug.log*
@@ -7,12 +7,29 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ───── Node / React (Vite) ─────
+arias_react/node_modules
+arias_react/dist
+arias_react/dist-ssr
+arias_react/*.local
 
-# Editor directories and files
+# ───── Python / FastAPI ─────
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.venv/
+backend/env/
+backend/*.pyc
+
+# ───── Docker / Database ─────
+pgdata/
+*.pid
+*.sock
+
+# ───── Environment files ─────
+.env
+*.env
+
+# ───── Editor / OS ─────
 .vscode/*
 !.vscode/extensions.json
 .idea
