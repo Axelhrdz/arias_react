@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/common/Navbar'
 import ProductCard from '../components/ProductCard'
 import Contact from '../components/forms/Contact'
 import EmailAlerts from '../components/forms/EmailAlerts'
 
 const Home = () => {
+  //testing api
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:8000")
+      .then((response) => response.json())
+      .then((data) => setMessage(data.message));
+  }, []);
+  console.log(message);
+  //end testing api
+
   return (
     <div>
       {/* navbar ssection */}
@@ -12,7 +23,7 @@ const Home = () => {
       {/* home banner section */}
       <div id='homeBanner' className='bg-[url(https://placehold.co/600x400)] h-[300px] flex flex-col justify-between items-center py-10'>
         <div>
-          Text title
+          {message}
         </div>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit excepturi tempora deserunt ea officiis.
@@ -44,7 +55,7 @@ const Home = () => {
       {/* summary of page section */}
       <div className='my-7 flex justify-center items-center gap-10'>
         <div className='w-[300px] h-[500px] bg-red-200'>
-          <img src="" alt="" />
+          <img src="#" alt="home_image" /> 
         </div>
         <div className='flex flex-col justify-between gap-5 w-[500px] h-full'>
           <h2>Summary</h2>
