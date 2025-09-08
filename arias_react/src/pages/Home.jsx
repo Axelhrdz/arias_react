@@ -26,7 +26,7 @@ const Home = () => {
           {message}
         </div>
         <div>
-          <span className='text-3xl bold'>Working on DEV branch!!</span>
+          <span className='text-3xl bold'>Working on USERS_TEST branch!!</span>
         </div>
         <a href='/' className='p-4 bg-stone-500 text-white font-thin cursor-pointer'>action button</a>
       </div>
