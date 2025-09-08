@@ -26,7 +26,7 @@ const Home = () => {
           {message}
         </div>
         <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit excepturi tempora deserunt ea officiis.
+          <span className='text-3xl bold'>Working on DEV branch!!</span>
         </div>
         <a href='/' className='p-4 bg-stone-500 text-white font-thin cursor-pointer'>action button</a>
       </div>
